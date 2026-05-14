@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invoice</title>
+
+    <style>
+      body {
+        font-family:
+          DejaVu Sans,
+          sans-serif;
+        font-size: 12px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        width: 700px;
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .page-break {
+        page-break-after: always;
+      }
+
+      h2,
+      h3 {
+        margin: 5px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 6px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .no-border td {
+        border: none;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .success {
+        color: #059669;
+        font-weight: 600;
+      }
+
+      .failed {
+        color: #dc2626;
+        font-weight: 600;
+      }
+
+      .refund {
+        color: #2563eb;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= PAGE 1 (PAYMENT INVOICE - SAME) ================= -->
+    <div class="container page-break">
+      <table class="no-border">
+        <tr>
+          <td>
+            <h2>R.N.G Patel Institute of Technology</h2>
+            <p>College Event Booking System</p>
+          </td>
+          <td class="text-right">
+            <h2>INVOICE</h2>
+          </td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2">Invoice Details</th>
+          <th colspan="2">Billed To</th>
+        </tr>
+        <tr>
+          <td>Invoice No</td>
+          <td>INV-VIRTUALPLACEMENT-17032026171111-3709</td>
+          <td>Name</td>
+          <td>Ayush Kansara</td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td>March 18, 2026</td>
+          <td>Email</td>
+          <td>cse.230840131006@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td>15:45</td>
+          <td>Phone</td>
+          <td>+91 98765 43210</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td class="success">Success</td>
+          <td>Student PEN</td>
+          <td>230840131006</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="4">Event Information</th>
+        </tr>
+        <tr>
+          <td><b>Event Name</b></td>
+          <td>SQL Treasury</td>
+          <td><b>Event ID</b></td>
+          <td>#EVT-2026-045</td>
+        </tr>
+        <tr>
+          <td><b>Event Date</b></td>
+          <td>March 10, 2026</td>
+          <td><b>Event Category</b></td>
+          <td>Visvesmruti</td>
+        </tr>
+        <tr>
+          <td><b>Registration Date</b></td>
+          <td>March 5, 2026</td>
+          <td><b>Team Name</b></td>
+          <td>Tech Innovators</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Participant(s)</th>
+          <th>Fee</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Event Registration Fee</td>
+          <td class="text-center">1</td>
+          <td class="text-center">₹50.00</td>
+          <td class="text-center">₹50.00</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td class="text-right"><strong>Subtotal</strong></td>
+          <td class="text-right">₹50.00</td>
+        </tr>
+        <tr>
+          <td class="text-right"><strong>Total</strong></td>
+          <td class="text-right"><strong>₹50.00</strong></td>
+        </tr>
+        <tr>
+          <td class="text-right"><strong>Amount in Words</strong></td>
+          <td class="text-right"><strong>Fifty Rupees only</strong></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2">Payment Details</th>
+        </tr>
+        <tr>
+          <td>Mode</td>
+          <td>Online Payment</td>
+        </tr>
+        <tr>
+          <td>Gateway</td>
+          <td>Razorpay</td>
+        </tr>
+        <tr>
+          <td>Payment ID</td>
+          <td>pay_MhFGKJ567890ABCD</td>
+        </tr>
+        <tr>
+          <td>Date & Time</td>
+          <td>March 5, 2026</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td class="success">Success</td>
+        </tr>
+        <tr>
+          <td>Reason</td>
+          <td>Network Issue</td>
+        </tr>
+      </table>
+
+      <table class="no-border">
+        <tr>
+          <td>
+            <p><strong>Notes:</strong></p>
+            <ul>
+              <li>This is a computer-generated invoice.</li>
+              <li>Email: support@cebs.rngpit.edu</li>
+              <li>Contact: +91 98765 43210</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ================= PAGE 2 (REFUND INVOICE) ================= -->
+    <div class="container">
+      <table class="no-border">
+        <tr>
+          <td>
+            <h2>R.N.G Patel Institute of Technology</h2>
+            <p>Refund Invoice</p>
+          </td>
+          <td class="text-right">
+            <h2>REFUND</h2>
+          </td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2">Refund Details</th>
+          <th colspan="2">Refund To</th>
+        </tr>
+        <tr>
+          <td>Refund ID</td>
+          <td>rfnd_987654321</td>
+          <td>Name</td>
+          <td>Ayush Kansara</td>
+        </tr>
+        <tr>
+          <td>Refund Date</td>
+          <td>March 20, 2026</td>
+          <td>Email</td>
+          <td>cse.230840131006@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Refund Time</td>
+          <td>12:30</td>
+          <td>Phone</td>
+          <td>+91 98765 43210</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td class="refund">Processed</td>
+          <td>Student PEN</td>
+          <td>230840131006</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="4">Event Information</th>
+        </tr>
+        <tr>
+          <td><b>Event Name</b></td>
+          <td>SQL Treasury</td>
+          <td><b>Event ID</b></td>
+          <td>#EVT-2026-045</td>
+        </tr>
+        <tr>
+          <td><b>Original Payment ID</b></td>
+          <td>pay_MhFGKJ567890ABCD</td>
+          <td><b>Refund Reason</b></td>
+          <td>Event Cancelled</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Amount Paid</th>
+          <th>Refund Amount</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Event Registration Fee</td>
+          <td class="text-center">₹50.00</td>
+          <td class="text-center">₹50.00</td>
+          <td class="text-center refund">Refunded</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td class="text-right"><strong>Total Refunded</strong></td>
+          <td class="text-right"><strong>₹50.00</strong></td>
+        </tr>
+        <tr>
+          <td class="text-right"><strong>Amount in Words</strong></td>
+          <td class="text-right"><strong>Fifty Rupees only</strong></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2">Refund Transaction</th>
+        </tr>
+        <tr>
+          <td>Mode</td>
+          <td>Original Payment Method</td>
+        </tr>
+        <tr>
+          <td>Gateway</td>
+          <td>Razorpay</td>
+        </tr>
+        <tr>
+          <td>Refund ID</td>
+          <td>rfnd_987654321</td>
+        </tr>
+        <tr>
+          <td>Processed On</td>
+          <td>March 20, 2026</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td class="refund">Processed</td>
+        </tr>
+      </table>
+
+      <table class="no-border">
+        <tr>
+          <td>
+            <p><strong>Notes:</strong></p>
+            <ul>
+              <li>This is a system-generated refund invoice.</li>
+              <li>
+                The refunded amount will reflect in your account within 5-7
+                working days.
+              </li>
+              <li>Email: support@cebs.rngpit.edu</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

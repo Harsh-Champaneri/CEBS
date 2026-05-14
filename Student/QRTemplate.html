@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Entry Pass - CEBS</title>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #e8f6ff;
+      font-family:
+        &quot;DM Sans&quot;, &quot;Segoe UI&quot;, Arial, Helvetica, sans-serif;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      style="background: #e8f6ff"
+    >
+      <tr>
+        <td align="center" style="padding: 28px 0">
+          <!-- ═══════════ MAIN 600px CONTAINER ═══════════ -->
+          <table
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              background: #ffffff;
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: 0 20px 50px rgba(14, 165, 233, 0.2);
+              border: 1px solid rgba(244, 63, 94, 0.15);
+            "
+          >
+            <!-- ── TOP HEADER (Deep Blue - matching nav) ── -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(30, 58, 138, 0.92) 0%,
+                    rgba(30, 58, 138, 0.95) 100%
+                  );
+                  padding: 32px 24px 28px;
+                  backdrop-filter: blur(20px);
+                "
+              >
+                <!-- Logo badge – matching .web-logo from homepage -->
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="margin: 0 auto 16px"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      valign="middle"
+                      style="
+                        width: 52px;
+                        height: 52px;
+                        background: linear-gradient(135deg, #f43f5e, #e11d48);
+                        border-radius: 13px;
+                        box-shadow: 0 4px 18px rgba(244, 63, 94, 0.4);
+                      "
+                    >
+                      <!-- Font Awesome building icon inline SVG alternative -->
+                      <span
+                        style="
+                          font-size: 24px;
+                          line-height: 52px;
+                          display: inline-block;
+                          color: #ffffff;
+                        "
+                        >🏛️</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- College name -->
+                <p
+                  style="
+                    margin: 0;
+                    color: #f0f9ff;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.4px;
+                    font-family: &quot;Playfair Display&quot;, serif;
+                  "
+                >
+                  R.N.G Patel Institute of Technology
+                </p>
+                <p
+                  style="
+                    margin: 6px 0 0;
+                    color: rgba(240, 249, 255, 0.7);
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 1.4px;
+                    text-transform: uppercase;
+                  "
+                >
+                  College Event Booking System
+                </p>
+              </td>
+            </tr>
+
+            <!-- ── THIN SKY BLUE ACCENT BAR ── -->
+            <tr>
+              <td
+                style="
+                  height: 3px;
+                  background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
+                "
+              ></td>
+            </tr>
+
+            <!-- ── GREETING ── -->
+            <tr>
+              <td style="padding: 28px 32px 8px; color: #1e293b">
+                <p style="margin: 0 0 10px; font-size: 16px; color: #1e293b">
+                  Dear <strong style="color: #0ea5e9">{{MEMBER_NAME}}</strong>,
+                </p>
+                <p
+                  style="
+                    margin: 0;
+                    font-size: 14px;
+                    color: #475569;
+                    line-height: 1.6;
+                  "
+                >
+                  Thank you for registering for
+                  <strong style="color: #1e293b">{{EVENT_NAME}}</strong>. Your
+                  participation has been successfully confirmed. Find your
+                  details and entry pass below.
+                </p>
+              </td>
+            </tr>
+
+            <!-- ── EVENT DETAILS CARD ── -->
+            <tr>
+              <td style="padding: 18px 32px 0">
+                <!-- Section label -->
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="padding-bottom: 10px">
+                      <span
+                        style="
+                          display: inline-block;
+                          background: linear-gradient(135deg, #0ea5e9, #0284c7);
+                          color: #fff;
+                          font-size: 11px;
+                          font-weight: 700;
+                          letter-spacing: 1.3px;
+                          text-transform: uppercase;
+                          padding: 5px 12px;
+                          border-radius: 20px;
+                          box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
+                        "
+                        >📋 Event Details</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Details rows -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="
+                    border-radius: 12px;
+                    overflow: hidden;
+                    border: 1px solid rgba(14, 165, 233, 0.2);
+                    background: rgba(255, 255, 255, 0.6);
+                    backdrop-filter: blur(12px);
+                  "
+                >
+                  <!-- Row 1 – Event Name -->
+                  <tr style="background: rgba(191, 219, 254, 0.3)">
+                    <td
+                      width="140"
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span
+                        style="
+                          font-size: 12px;
+                          font-weight: 700;
+                          color: #64748b;
+                          text-transform: uppercase;
+                          letter-spacing: 0.8px;
+                        "
+                        >📌 Event</span
+                      >
+                    </td>
+                    <td
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span
+                        style="
+                          font-size: 13px;
+                          font-weight: 600;
+                          color: #1e293b;
+                        "
+                        >{{EVENT_NAME}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Row 2 – Team Name -->
+                  {{TEAM_SECTION}}
+
+                  <!-- Row 3 – Participant -->
+                  <tr style="background: rgba(191, 219, 254, 0.3)">
+                    <td
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span
+                        style="
+                          font-size: 12px;
+                          font-weight: 700;
+                          color: #64748b;
+                          text-transform: uppercase;
+                          letter-spacing: 0.8px;
+                        "
+                        >🎓 Name</span
+                      >
+                    </td>
+                    <td
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span style="font-size: 13px; color: #475569"
+                        >{{MEMBER_NAME}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Row 4 – Date -->
+                  <tr style="background: #ffffff">
+                    <td
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span
+                        style="
+                          font-size: 12px;
+                          font-weight: 700;
+                          color: #64748b;
+                          text-transform: uppercase;
+                          letter-spacing: 0.8px;
+                        "
+                        >📅 Date</span
+                      >
+                    </td>
+                    <td
+                      style="
+                        padding: 11px 14px;
+                        border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+                      "
+                    >
+                      <span
+                        style="
+                          font-size: 13px;
+                          font-weight: 600;
+                          color: #f43f5e;
+                        "
+                        >{{EVENT_DATE}}</span
+                      >
+                    </td>
+                  </tr>
+
+                  <!-- Row 5 – Venue -->
+                  <tr style="background: rgba(191, 219, 254, 0.3)">
+                    <td style="padding: 11px 14px">
+                      <span
+                        style="
+                          font-size: 12px;
+                          font-weight: 700;
+                          color: #64748b;
+                          text-transform: uppercase;
+                          letter-spacing: 0.8px;
+                        "
+                        >📍 Venue</span
+                      >
+                    </td>
+                    <td style="padding: 11px 14px">
+                      <span style="font-size: 13px; color: #475569"
+                        >{{EVENT_VENUE}}</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ── QR CODE SECTION ── -->
+            <tr>
+              <td align="center" style="padding: 28px 32px 22px">
+                <!-- Section label -->
+                <p
+                  style="
+                    margin: 0 0 14px;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: #0ea5e9;
+                    letter-spacing: 1.4px;
+                    text-transform: uppercase;
+                  "
+                >
+                  🎟️ Your Entry Pass
+                </p>
+
+                <!-- QR wrapper card - Sky Blush styled -->
+                <table cellpadding="0" cellspacing="0" style="margin: 0 auto">
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        background: linear-gradient(135deg, #bfdbfe, #dbeafe);
+                        border-radius: 16px;
+                        padding: 18px;
+                        box-shadow: 0 18px 44px rgba(14, 165, 233, 0.25);
+                        border: 1px solid rgba(14, 165, 233, 0.2);
+                      "
+                    >
+                      <!-- inner white QR box -->
+                      <table cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td
+                            align="center"
+                            style="
+                              background: #ffffff;
+                              border-radius: 12px;
+                              padding: 14px;
+                              border: 2px dashed #0ea5e9;
+                            "
+                          >
+                            <img
+                              src="{{QR_CODE}}"
+                              alt="Event QR Code"
+                              width="160"
+                              style="display: block; border-radius: 8px"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- label under QR -->
+                      <p
+                        style="
+                          margin: 12px 0 0;
+                          color: #475569;
+                          font-size: 11px;
+                          letter-spacing: 0.6px;
+                          font-weight: 600;
+                        "
+                      >
+                        Scan at entry gate
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ── WARNING BOX - Sky Blush styled ── -->
+            <tr>
+              <td style="padding: 0 32px 26px">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="
+                    background: rgba(252, 231, 243, 0.5);
+                    border: 1px solid rgba(244, 63, 94, 0.3);
+                    border-radius: 12px;
+                    overflow: hidden;
+                    backdrop-filter: blur(8px);
+                  "
+                >
+                  <tr>
+                    <td
+                      width="44"
+                      valign="top"
+                      align="center"
+                      style="
+                        background: linear-gradient(135deg, #f43f5e, #fb7185);
+                        padding: 14px 0;
+                        width: 44px;
+                      "
+                    >
+                      <span
+                        style="font-size: 20px; line-height: 1; color: #ffffff"
+                        >⚠️</span
+                      >
+                    </td>
+                    <td style="padding: 12px 16px">
+                      <p
+                        style="
+                          margin: 0 0 4px;
+                          font-size: 13px;
+                          font-weight: 700;
+                          color: #1e293b;
+                        "
+                      >
+                        Important Notice
+                      </p>
+                      <p
+                        style="
+                          margin: 0;
+                          font-size: 12px;
+                          color: #475569;
+                          line-height: 1.55;
+                        "
+                      >
+                        This QR code is
+                        <strong style="color: #f43f5e"
+                          >unique and valid for one-time entry only</strong
+                        >. Do not share it with anyone. Please present this QR
+                        code at the event entry gate along with your college ID.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ── DEEP BLUE FOOTER - matching header ── -->
+            <tr>
+              <td
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgba(30, 58, 138, 0.92) 0%,
+                    rgba(30, 58, 138, 0.95) 100%
+                  );
+                  padding: 22px 24px;
+                  text-align: center;
+                  backdrop-filter: blur(16px);
+                "
+              >
+                <!-- thin sky blue line -->
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td
+                      style="width: 33%; height: 1px; background: transparent"
+                    ></td>
+                    <td
+                      style="
+                        width: 34%;
+                        height: 2px;
+                        background: linear-gradient(
+                          90deg,
+                          transparent,
+                          #38bdf8,
+                          transparent
+                        );
+                        border-radius: 1px;
+                      "
+                    ></td>
+                    <td
+                      style="width: 33%; height: 1px; background: transparent"
+                    ></td>
+                  </tr>
+                </table>
+
+                <p
+                  style="
+                    margin: 14px 0 4px;
+                    color: #f0f9ff;
+                    font-size: 13px;
+                    font-weight: 700;
+                    font-family: &quot;Playfair Display&quot;, serif;
+                  "
+                >
+                  R.N.G Patel Institute of Technology
+                </p>
+                <p
+                  style="
+                    margin: 0 0 2px;
+                    color: rgba(248, 250, 252, 0.8);
+                    text-decoration: none;
+                    font-size: 11px;
+                  "
+                >
+                  📧
+                  <a
+                    href=""
+                    style="
+                      color: rgba(248, 250, 252, 0.7) !important;
+                      text-decoration: none;
+                    "
+                    >cebs.tech.team@gmail.com</a
+                  >
+                </p>
+                <p
+                  style="
+                    margin: 14px 0 0;
+                    color: rgba(248, 250, 252, 0.6);
+                    font-size: 10px;
+                    letter-spacing: 0.5px;
+                  "
+                >
+                  This is an automated email. Please do not reply.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- ═══════════ END CONTAINER ═══════════ -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
