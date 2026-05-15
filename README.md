@@ -4,12 +4,19 @@ The platform includes dedicated dashboards for students, faculty coordinators, a
 
 🔹 Features:
 • Online Event Registration
+
 • Razorpay Payment Integration
+
 • QR Code Based Event Entry
+
 • Email, SMS & WhatsApp Notifications
+
 • Analytics & Reports Dashboard
+
 • Role-Based Access Control
+
 • OTP Authentication & Password Reset
+
 • Responsive UI for Desktop and Mobile Devices
 
 🔹 Tech Stack:
@@ -17,6 +24,9 @@ HTML5, CSS3, JavaScript, Bootstrap 5, PHP, MySQL, AJAX, jQuery, Razorpay, Cloudi
 
 🔹 Contributors:
 • Harsh Champaneri
+
 • Ayush Kansara
+
 • Mansi Jethwani
+
 • Krupa Ahir 
