@@ -3,6 +3,7 @@ CEBS (College Event Booking System) is a web-based platform designed to simplify
 The platform includes dedicated dashboards for students, faculty coordinators, and administrators, along with analytics, reports, authentication systems, and role-based access control for efficient event management.
 
 🔹 Features:
+
 • Online Event Registration
 
 • Razorpay Payment Integration
@@ -23,6 +24,7 @@ The platform includes dedicated dashboards for students, faculty coordinators, a
 HTML5, CSS3, JavaScript, Bootstrap 5, PHP, MySQL, AJAX, jQuery, Razorpay, Cloudinary, PHPMailer, Dompdf, PhpSpreadsheet, UltraMsg, Google Maps API.
 
 🔹 Contributors:
+
 • Harsh Champaneri
 
 • Ayush Kansara
